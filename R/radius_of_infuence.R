@@ -16,7 +16,7 @@ r_freat_steady <- function(Q, Rech) {
 }
 
 
-#' @description Area of influence for a stationary groundwter well in a freatic aquifer with net recharge. Reference: De Smedt, 2007
+#' @description Area of influence for a stationary groundwater well in a freatic aquifer with net recharge. Reference: De Smedt, 2007
 #'
 #'@param Q abstraction (L^3/T)
 #'@param Rech recharge (L^3/T)
