@@ -1,3 +1,5 @@
+#' Thiem dupuit verruijt
+#'
 #' @description Thiem / dupuit / Verruijt freatic aquifer stationary flow with recharge.
 #'     When r > r0 the drawdown (s) will be = 0
 #'     When the drawdown (s) is larger than the aquifer thickness (D) the drawdown is set equal to the the thickness.
@@ -8,6 +10,9 @@
 #' @param Kh horizontal transmissivity (L/T)
 #' @param Rech recharge (L/T)
 #' @param r distance (L)
+#'
+#' @export
+#'
 #' @return s drawdown (L)
 
 #-----------------------------------------------------------------------------------

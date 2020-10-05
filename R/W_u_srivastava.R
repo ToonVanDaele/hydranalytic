@@ -1,3 +1,5 @@
+#' W_u_Srivastava
+#'
 #' @description Calculation of W(u) Srivastava approximation
 #' @param u (-)
 #'

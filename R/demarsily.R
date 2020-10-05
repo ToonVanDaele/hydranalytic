@@ -1,3 +1,5 @@
+#' DeMarsily
+#'
 #' @description  De Marsily, 1986; p.198
 #' (www.grondwaterformules.nl)
 #'

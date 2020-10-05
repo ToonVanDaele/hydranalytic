@@ -1,3 +1,5 @@
+#' specific storages
+#'
 #' @description specific elastic storage. Storage only due to compressability.
 #'    Formule van der Gun (Van der Gun, 1979)
 #'  reference: Lebbe & Vandebohede (2004)

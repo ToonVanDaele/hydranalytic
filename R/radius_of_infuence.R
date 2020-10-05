@@ -8,8 +8,6 @@
 #' @return radius of influence (L)
 #' @export
 #'
-#' @example
-#' r_freat_steady(5, 0.1)
 
 r_freat_steady <- function(Q, Rech) {
 

@@ -1,3 +1,5 @@
+#' Calculation of u for Theis formula
+#'
 #' @description Calculation of u for W(u) in the Theis formula
 #'
 #' @param t time (T)

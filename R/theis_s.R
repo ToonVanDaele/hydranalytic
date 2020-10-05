@@ -1,3 +1,5 @@
+#' Theis_s
+#'
 #' @description Calculation of drawdown (s) with the Theis equation.
 #'     By default the Srivastava equation is used for the W(u) approximation.
 #'
@@ -12,7 +14,7 @@
 #' @return s drawdown (L)
 #'
 
-s_theis <- function (Q, t, r, kD, S, W_u_method = "Srivastava") {
+theis_s <- function (Q, t, r, kD, S, W_u_method = "Srivastava") {
 
   u <- u_theis(t = t, r = r, kD = kD, S = S)
 
