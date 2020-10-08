@@ -25,13 +25,10 @@ theis_s <- function (t, Q, r, Kh, D, S, W_u_method = "srivastava") {
 
   require(assertthat)
 
-  # assert_that(t >= 0)
-  # assert_that(r >= 0)
-  # assert_that(Kh > 0)
-  # assert_that(D > 0)
-  # assert_that(S >= 0)
 
-  u <- u_theis(t = t, r = r, Kh = Kh, D = D, S = S)
+  assert_that(t >= 0, r >= 0, Kh > 0, D > 0, S >= 0)
+
+  u <- (S * r^2) / (4 * Kh * D * t)
 
   W_u <- ifelse(W_u_method == "huisman", W_u_Huisman(u), W_u_srivastava(u))
 
