@@ -4,15 +4,17 @@
 #'
 #' @param t time (T)
 #' @param r radius (L),
-#' @param kD conductivity (L^2/T)
+#' @param Kh horizontal hydraulic conductivity (L/T)
+#' @param D aquifer thickness (L/T)
 #' @param S storage (-)
 #'
 #' @export
 #'
 #' @return u (-)
 #----------------------------------------------------------------------
-u_theis <- function (t, r, kD, S) {
+u_theis <- function (t, r, Kh, D, S) {
 
-  u_theis <- (S * r^2) / (4 * kD * t)
-  return (u_theis  )
+  u <- (S * r^2) / (4 * Kh * D * t)
+  return (u)
 }
+
