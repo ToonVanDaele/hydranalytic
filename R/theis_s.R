@@ -18,21 +18,22 @@
 #'
 #' @export
 #'
-theis_s <- function (t, Q, r, Kh, D, S, W_u_method = "srivastava") {
-
-  Kh2 <- Kh
-  D2 <- D
+theis_s <- function (Q, t, r, Kh, D, S, W_u_method = "srivastava") {
 
   require(assertthat)
 
 
-  assert_that(t >= 0, r >= 0, Kh > 0, D > 0, S >= 0)
+  assert_that(all(t >= 0), all(r >= 0), all(Kh > 0), all(D > 0), all(S >= 0))
 
   u <- (S * r^2) / (4 * Kh * D * t)
 
-  W_u <- ifelse(W_u_method == "huisman", W_u_Huisman(u), W_u_srivastava(u))
+  W_u <- W_u(u, W_u_method)
 
-  s <- Q / (4 * pi * Kh2 * D2) * W_u
+  s <- Q / (4 * pi * Kh * D) * W_u
+
+  s <- ifelse(t == 0, 0, s)
+
+  if(r == 0 & s == Inf) warning('at distance (r) = 0 drawdown (s) becomes Inf')
 
   return (s)
 }
