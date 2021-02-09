@@ -4,7 +4,7 @@
 #' (www.grondwaterformules.nl)
 #'
 #' @param x distance (L)
-#' @param Sy Sy (-)
+#' @param S Storage (-)
 #' @param Kh Kh (L/T)
 #' @param D thickness (L)
 #' @param t time (T)
@@ -14,9 +14,9 @@
 #' @return s change of groundwater level (L)
 #'
 #' @export
-demarsily <- function(x, Sy, kD, t, h0) {
+demarsily <- function(x, S, Kh, D, t, h0) {
 
-  s <- h0 * erf( x * (sqrt( Sy / (4 * kD * t))))
+  s <- h0 * (1 - erf( x * (sqrt( S / (4 * Kh * D * t)))))
 
   return(s)
 
