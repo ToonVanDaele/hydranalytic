@@ -13,16 +13,14 @@
 #'
 #' @return s drawdown (L)
 #-----------------------------------------------------------------------------------
-edelman <- function(r, D, Kh, t, S) {
+edelman <- function(r, D, Kh, t, S, h0) {
 
   s <- h0 * erf(r * sqrt( S / 4 * Kh * D * t))
 
   return (s)
 }
 
-
-
-edelman_rise <- function(r, D, Kh, t, S) {
+edelman_rise <- function(r, D, Kh, t, S, h0) {
 
   s <- h0 * erfc(r * sqrt( S / 4 * Kh * D * t))
 
