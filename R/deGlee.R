@@ -1,4 +1,4 @@
-#' De Glee
+#' De Glee  (reference to be added)
 #'
 #' @description de Glee semi-confined aquifer with stationary flow
 #'
