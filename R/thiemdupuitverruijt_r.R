@@ -1,9 +1,6 @@
 #' Thiem dupuit verruijt search for radius with drawdown = s
 #'
 #' @description Thiem / dupuit / Verruijt freatic aquifer stationary flow with recharge.
-#'     When r > r0 the drawdown (s) will be = 0
-#'     When the drawdown (s) is larger than the aquifer thickness (D) the drawdown is set equal to the the thickness.
-#'     A warning message is returned.
 #'
 #' @param Q abstraction (L^3/T)
 #' @param D saturated thickness (L)
