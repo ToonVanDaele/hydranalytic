@@ -1,4 +1,4 @@
-#' Hantush
+#' Hantush  (reference to be added)
 #'
 #' @description Hantush semi-confined aquifer with stationary flow
 #'
