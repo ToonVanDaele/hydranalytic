@@ -8,7 +8,7 @@
 #' @param Kh Kh (L/T)
 #' @param D thickness (L)
 #' @param t time (T)
-#' @param h0 change of water level in  (L)
+#' @param h0 change of water level at cross section (L)
 #'
 #'
 #' @return r change of groundwater level (L)

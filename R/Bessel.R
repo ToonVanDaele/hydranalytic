@@ -8,7 +8,7 @@
 #' @return bess bessel (-?)
 #'
 #' @examples
-#' Bessel(20, 5)
+#' Bessel(20, 5, 5, 20, 5, 0.5)
 #'
 #' @references
 #'
