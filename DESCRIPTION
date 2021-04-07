@@ -9,17 +9,18 @@ Authors@R:
            email = "toon.vandaele@inbo.be")
 Author: Toon Van Daele
 Maintainer: Toon Van Daele <toon.vandaele@inbo.be>
-Description: A collection of common analytic
-    solutions for hydrologicl equations.  I use these equations regulary
-    for a quick analysis. For most of the equations tools are available
-    for free in the form of webforms or excel sheets. However they don't
-    give the required flexibility and reproducebility I require, I decided
-    to put the R code I use in an R package on github. The code is not
-    thouroughly checked and the code is not free of errors. I you know of
-    a package with a similar goal, please let me know. If not, feel free
-    to contribute and further extend the list of equations.
-Imports: stats
+Description: A collection of common analytic solutions for hydrologicl
+    equations.  I use these equations regulary for a quick analysis. For
+    most of the equations tools are available for free in the form of
+    webforms or excel sheets. However they don't give the required
+    flexibility and reproducebility I require, I decided to put the R code
+    I use in an R package on github. The code is not thouroughly checked
+    and the code is not free of errors. I you know of a package with a
+    similar goal, please let me know. If not, feel free to contribute and
+    further extend the list of equations.
 License: GNU 3.0 public license
+Imports: 
+    stats
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1

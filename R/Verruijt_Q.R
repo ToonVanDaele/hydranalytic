@@ -16,7 +16,8 @@
 #-------------------------------------------------------------------------------
 Verruijt_Q <- function(r_eq, r0, Kh, H, s, Rech) {
 
-  Q <- - (H^2 - (H - s)^2 + (Rech / (2 * Kh)) * (r0^2 - r_eq^2)) * (pi * Kh) /  log(r_eq / r0)
+  Q <- - (H^2 - (H - s)^2 + (Rech / (2 * Kh)) * (r0^2 - r_eq^2)) * (pi * Kh) /
+    log(r_eq / r0)
 
   return(Q)
 }

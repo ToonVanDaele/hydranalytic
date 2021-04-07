@@ -17,4 +17,3 @@ W_u <- function(u, method = "srivastava") {
 
   return(W_u)
 }
-

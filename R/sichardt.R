@@ -5,7 +5,7 @@
 #' meter per second (m/s) respectivily.
 #'
 #' @param s drawdown (m)
-#' @param K hydraulic conductivity (m/s)
+#' @param k hydraulic conductivity (m/s)
 #'
 #' @export
 #'
