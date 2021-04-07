@@ -16,8 +16,9 @@
 #'
 #' @export
 #'
-Hantush <- function(Q, D, Kh, r, Dc, c){
+Hantush <- function(Q, D, Kh, r, Dc, c) {
 
-  s <- (Q / 4 * pi * Kh * D ) * besselI(r / sqrt(k * D * c))
+  s <- (Q / 4 * pi * Kh * D) * besselI(r / sqrt(Kh * D * c))
+  return(s)
 
 }

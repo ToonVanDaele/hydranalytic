@@ -1,16 +1,17 @@
 #' Sichardt
 #'
-#' @description Sichardt (Vandebroek et al., 2011). This formula is an emperic formula.
-#' It drawdown and conductivity should be expressed in meter (m) en meter per second (m/s) respectivily
+#' @description Sichardt (Vandebroek et al., 2011). This formula is an emperic
+#' formula. It drawdown and conductivity should be expressed in meter (m) and
+#' meter per second (m/s) respectivily.
 #'
 #' @param s drawdown (m)
-#' @param kD conductivity doorlatendheid (m/s)
+#' @param K hydraulic conductivity (m/s)
 #'
 #' @export
 #'
-#' @return sichardt sichardt (?)
+#' @return R sichardt radius of influence (m)
 
 sichardt <- function(s, k) {
-  R <- 3000 * s * k^(1/2)
+  R <- 3000 * s * k^ (1 / 2)
   return(R)
 }

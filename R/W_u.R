@@ -3,6 +3,7 @@
 #' @description W(u) is calculated using the Srivastava approximation (default)
 #' or Huisman approximation.
 #' @param u (-)
+#' @param method approximation method for W(u)
 #'
 #' @return W_u (-)
 #' @export

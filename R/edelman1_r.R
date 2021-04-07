@@ -1,4 +1,4 @@
-#' DeMarsily  -  distance to drawdown
+#' Edelman - case 1 -  distance to drawdown
 #'
 #' @description  De Marsily, 1986; p.198
 #' (www.grondwaterformules.nl)
@@ -14,6 +14,7 @@
 #' @return r change of groundwater level (L)
 #'
 #' @export
+#-------------------------------------------------------------------------------
 demarsily_r <- function(s, S, Kh, D, t, h0) {
 
   r <- erfcinv(s / h0) / sqrt(S / (4 * Kh * D * t))

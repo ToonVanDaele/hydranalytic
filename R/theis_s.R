@@ -9,7 +9,7 @@
 #' @param Kh horizontal hydraulic conductivity (L/T)
 #' @param D aquifer thickness
 #' @param S storage (-)
-#'
+#' @param W_u_method approximation method for Well function
 #'
 #' @return s drawdown (L)
 #'
@@ -18,7 +18,7 @@
 #'
 #' @export
 #'
-theis_s <- function (Q, t, r, Kh, D, S, W_u_method = "srivastava") {
+theis_s <- function(Q, t, r, Kh, D, S, W_u_method = "srivastava") {
 
   # require(assertthat)
   #
@@ -40,7 +40,8 @@ theis_s <- function (Q, t, r, Kh, D, S, W_u_method = "srivastava") {
   # Kh <- ifelse(length(Kh) == 1, rep(Kh, maxl), Kh)
   # D <- ifelse(length(D) == 1, rep(D, maxl), D)
   # S <- ifelse(length(S) == 1, rep(S, maxl), S)
-  # W_u_method <- ifelse(length(W_u_method) == 1, rep(W_u_method, maxl), W_u_method)
+  # W_u_method <- ifelse(length(W_u_method) == 1, rep(W_u_method, maxl),
+  #W_u_method)
 
   u <- (S * r^2) / (4 * Kh * D * t)
 
@@ -50,7 +51,8 @@ theis_s <- function (Q, t, r, Kh, D, S, W_u_method = "srivastava") {
 
   s <- ifelse(t == 0, 0, s)
 
-  ifelse(r == 0 & s == Inf, warning('at distance (r) = 0 drawdown (s) becomes Inf'), "")
+  ifelse(r == 0 & s == Inf,
+         warning("at distance (r) = 0 drawdown (s) becomes Inf"), "")
 
-  return (s)
+  return(s)
 }

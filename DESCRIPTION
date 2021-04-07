@@ -1,6 +1,6 @@
 Type: Package
 Package: hydranalytic
-Title: A collection of some analytic hydrological equations
+Title: A Collection of Some Analytic Hydrological Equations
 Version: 0.1.0
 Authors@R: 
     person(given = "Toon",
@@ -8,8 +8,8 @@ Authors@R:
            role = "aut",
            email = "toon.vandaele@inbo.be")
 Author: Toon Van Daele
-Maintainer: Toon Van Daele <toon.vandaele@inbo.bet>
-Description: This package contains a collection of common analytic
+Maintainer: Toon Van Daele <toon.vandaele@inbo.be>
+Description: A collection of common analytic
     solutions for hydrologicl equations.  I use these equations regulary
     for a quick analysis. For most of the equations tools are available
     for free in the form of webforms or excel sheets. However they don't
@@ -18,6 +18,7 @@ Description: This package contains a collection of common analytic
     thouroughly checked and the code is not free of errors. I you know of
     a package with a similar goal, please let me know. If not, feel free
     to contribute and further extend the list of equations.
+Imports: stats
 License: GNU 3.0 public license
 Encoding: UTF-8
 LazyData: true

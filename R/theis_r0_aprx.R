@@ -11,9 +11,9 @@
 #'
 #' @export
 #'
-theis_r0_aprx <- function (t, Kh, D, S) {
+theis_r0_aprx <- function(t, Kh, D, S) {
 
   r <- sqrt(2.25 * Kh * D * t / S)
 
-  return (r)
+  return(r)
 }

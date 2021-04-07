@@ -1,6 +1,7 @@
 #' Verruijt - flow
 #'
-#' @description Verruijt flow in a freatic aquifer with stationary flow. Reference: xxx
+#' @description Verruijt flow in a freatic aquifer with stationary flow.
+#' Reference: xxx
 #'
 #' @param r_eq equivalent radius construction pit (L)
 #' @param r0 radius of influence (L)
@@ -12,10 +13,10 @@
 #' @export
 #'
 #' @return Q abstraction (L^3/T)
-#-----------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
 Verruijt_Q <- function(r_eq, r0, Kh, H, s, Rech) {
 
-  Q <- - (H^2 - (H - s)^2 + (Rech / (2 * Kh)) * (r0^2 - r_eq^2)) * (pi * Kh) /  log (r_eq / r0)
+  Q <- - (H^2 - (H - s)^2 + (Rech / (2 * Kh)) * (r0^2 - r_eq^2)) * (pi * Kh) /  log(r_eq / r0)
 
-  return (Q)
+  return(Q)
 }

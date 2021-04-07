@@ -1,6 +1,7 @@
-#' Dupuit - flow
+#' Thiem / Dupuit - flow
 #'
-#' @description Thiem Dupuit flow in a freatic aquifer with stationary flow. Reference: xxx
+#' @description Thiem Dupuit flow in a freatic aquifer with stationary flow.
+#' Reference: xxx
 #'
 #' @param r_eq equivalent radius construction pit (L)
 #' @param r0 radius of influence (L)
@@ -11,11 +12,11 @@
 #' @export
 #'
 #' @return Q abstraction (L^3/T)
-#-----------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
 Dupuit_Q <- function(r_eq, r0, Kh, H, s) {
 
 
   Q <- (pi * Kh * (H^2 - (H - s)^2)) / (log(r0 + r_eq) - log(r_eq))
 
-  return (Q)
+  return(Q)
 }

@@ -8,12 +8,10 @@
 #'
 #' @export
 #'
-#' @return
+#' @return Sspec specific storage
 
 Sspec <- function(d) {
 
   Sspec <- 1.8E-6 + 2.59E-4 * d^-0.7
   return(Sspec)
 }
-
-

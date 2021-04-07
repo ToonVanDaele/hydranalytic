@@ -8,6 +8,7 @@
 #'
 #' @return r radius (L)
 
-eq_radius <- function(L, B) {
-  r <- (L + B) / pi
+eq_radius <- function(L, W) {
+  r <- (L + W) / pi
+  return(r)
 }
