@@ -15,6 +15,6 @@
 #-------------------------------------------------------------------------------
 ThiemDupuit <- function(r, r0, Q, D, Kh) {
 
-  s <- ifelse (r < r0, (Q / (2 * pi * Kh * D)) * log (r0 / r), 0)
+  s <- ifelse(r < r0, (Q / (2 * pi * Kh * D)) * log(r0 / r), 0)
   return(s)
 }

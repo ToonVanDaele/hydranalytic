@@ -3,7 +3,8 @@
 #' @description Freatic aquifer stationary flow with recharge (Verruijt, 1970).
 #'     When r > r0 the drawdown (s) will be = 0
 #'     When the drawdown (s) is larger than the aquifer thickness (D) the
-#'     drawdown is set equal to the the thickness and a warning message is returned.
+#'     drawdown is set equal to the the thickness and a warning message is
+#'     returned.
 #'
 #' @param Q abstraction (L^3/T)
 #' @param D saturated thickness (L)
@@ -16,16 +17,17 @@
 #'
 #' @return s drawdown (L)
 
-#-----------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
 ThiemDupuitVerruijt <- function(r, r0, Q, D, Kh, Rech) {
 
-  s <- ifelse (r >= r0,
+  s <- ifelse(r >= r0,
                0,
                ifelse(D^2 - ((Q / (2 * pi * Kh)) * (log(Q / (pi * Rech * r^2)) - 1)) - ((Rech * r^2) / (2 * Kh)) > 0,
-                       D - (D^2 - ((Q / (2 * pi * Kh)) * (log(Q/(pi * Rech * r^2)) -1)) - ((Rech * r^2) / (2 * Kh)))^0.5,
+                       D - (D^2 - ((Q / (2 * pi * Kh)) * (log(Q / (pi * Rech * r^2)) - 1)) - ((Rech * r^2) / (2 * Kh)))^0.5,
                        D))
 
-  #ifelse(s == D, warning('drawdown >= saturated thickness. returning s = saturated thickness'), "")
+  #ifelse(s == D,
+  #  warning("drawdown >= saturated thickness. returning s = saturated thickness"), "")
 
   return(s)
 }
