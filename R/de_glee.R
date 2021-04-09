@@ -16,7 +16,7 @@
 #' @examples
 #' DeGlee(50, 20, 2, 30, 10, 0.2)
 #-------------------------------------------------------------------------------
-DeGlee <- function(Q, D, Kh, r, Dc, Kv) {
+deglee <- function(Q, D, Kh, r, Dc, Kv) {
 
   L <- sqrt(Kh * D * Dc / Kv)
 

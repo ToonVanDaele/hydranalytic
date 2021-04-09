@@ -5,10 +5,10 @@ Version: 0.1.0
 Date: 2021-04-09
 Authors@R: 
     c(person(given = "Toon",
-           family = "Van Daele",
-           role = c("aut", "cre")
-           email = "toon.vandaele@inbo.be")
-    person(given = "Research Institute for Nature and Forest",
+             family = "Van Daele",
+             role = c("aut", "cre"),
+             email = "toon.vandaele@inbo.be"),
+      person(given = "Research Institute for Nature and Forest",
              role = c("cph", "fnd"),
              email = "info@inbo.be"))
 Description: A collection of common analytic solutions for standard
@@ -20,7 +20,7 @@ Description: A collection of common analytic solutions for standard
     is not thouroughly checked and the code is certainly not free of
     errors. Feel free to contribute and further extend the list of
     equations.
-License: GPL-3 | file LICENSE
+License: GPL-3 | file LICENSE.md
 URL: https://github.com/ToonVanDaele/hydranalytic
 BugReports: https://github.com/ToonVanDaele/hydranalytic/issues
 Imports: 
