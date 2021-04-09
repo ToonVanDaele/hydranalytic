@@ -2,22 +2,27 @@ Type: Package
 Package: hydranalytic
 Title: A Collection of Some Analytic Hydrological Equations
 Version: 0.1.0
+Date: 2021-04-09
 Authors@R: 
-    person(given = "Toon",
+    c(person(given = "Toon",
            family = "Van Daele",
-           role = "aut",
+           role = c("aut", "cre")
            email = "toon.vandaele@inbo.be")
-Author: Toon Van Daele
-Maintainer: Toon Van Daele <toon.vandaele@inbo.be>
-Description: A collection of common analytic solutions for standard hydrologic
-    problems. These equations are very useful for a quick analysis without the
-    need for a complex numerical modelling. Tool with these equations exists for
-    free in the form of webinterfaces, Excel sheets, python or other software. I
-    couldn't find an R package yet, so I decided to put the R code I use in an
-    R package on github. The code is not thouroughly checked and the code is
-    certainly not free of errors. Feel free to contribute and
-    further extend the list of equations.
-License: GPL-3
+    person(given = "Research Institute for Nature and Forest",
+             role = c("cph", "fnd"),
+             email = "info@inbo.be"))
+Description: A collection of common analytic solutions for standard
+    hydrologic problems. These equations are very useful for a quick
+    analysis without the need for a complex numerical modelling. Tool with
+    these equations exists for free in the form of webinterfaces, Excel
+    sheets, python or other software. I couldn't find an R package yet, so
+    I decided to put the R code I use in an R package on github. The code
+    is not thouroughly checked and the code is certainly not free of
+    errors. Feel free to contribute and further extend the list of
+    equations.
+License: GPL-3 | file LICENSE
+URL: https://github.com/ToonVanDaele/hydranalytic
+BugReports: https://github.com/ToonVanDaele/hydranalytic/issues
 Imports: 
     stats
 Encoding: UTF-8
