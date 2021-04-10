@@ -1,6 +1,7 @@
 #' Verruijt search for radius with drawdown = s
 #'
-#' @description Thiem / dupuit / Verruijt freatic aquifer stationary flow with recharge.
+#' @description Thiem / dupuit / Verruijt freatic aquifer stationary flow
+#' with recharge.
 #'
 #' @param r0 radius of influence (L)
 #' @param Q abstraction (L^3/T)
@@ -15,7 +16,7 @@
 #'
 #' @return r distance (L)
 
-#-----------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 radius_ThiemDupuitVerruijt <- function(r0, Q, D, Kh, Rech, s) {
 
   r <- ifelse(ThiemDupuitVerruijt_0(r = 0.001, r0 = r0, Q = Q, D = D, Kh = Kh,
