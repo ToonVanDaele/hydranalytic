@@ -11,4 +11,4 @@
 #'
 #' @return erfcinv (-)
 
-erfcinv <- function(x) qnorm(x / 2, lower = FALSE) / sqrt(2)
+erfcinv <- function(x) qnorm(x / 2, lower.tail = FALSE) / sqrt(2)
