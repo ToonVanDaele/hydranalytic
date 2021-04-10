@@ -7,6 +7,8 @@
 #'
 #' @param x x (-)
 #'
+#' @importFrom stats pnorm
+#'
 #' @return erfc erfc (-)
 
 erfc <- function(x) {

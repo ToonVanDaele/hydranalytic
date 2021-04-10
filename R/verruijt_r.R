@@ -9,6 +9,8 @@
 #' @param Rech recharge (L/T)
 #' @param s drawdown (L)
 #'
+#' @importFrom stats uniroot
+#'
 #' @export
 #'
 #' @return r distance (L)
