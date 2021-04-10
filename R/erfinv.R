@@ -7,7 +7,7 @@
 #'
 #' @param x x (-)
 #'
-#' @importFrom stats pnorm
+#' @importFrom stats qnorm
 #'
 #' @return erfinv (-)
 
