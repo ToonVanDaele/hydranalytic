@@ -20,7 +20,7 @@ Description: A collection of common analytic solutions for standard
     is not thouroughly checked and the code is certainly not free of
     errors. Feel free to contribute and further extend the list of
     equations.
-License: GPL-3 | file LICENSE.md
+License: GPL-3 | file LICENSE
 URL: https://github.com/ToonVanDaele/hydranalytic
 BugReports: https://github.com/ToonVanDaele/hydranalytic/issues
 Imports: 

@@ -11,9 +11,6 @@
 #'
 #' @return s drawdown (L)
 #'
-#' @examples
-#' DeGlee(50, 20, 2, 30, 10, 0.2)
-#'
 #' @export
 #'
 Hantush <- function(Q, D, Kh, r, Dc, c) {
