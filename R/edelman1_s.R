@@ -15,7 +15,7 @@
 #'
 #' @export
 #-------------------------------------------------------------------------------
-demarsily <- function(r, S, Kh, D, t, h0) {
+edelman_s <- function(r, S, Kh, D, t, h0) {
 
   s <- h0 * (1 - erf(r * (sqrt(S / (4 * Kh * D * t)))))
 

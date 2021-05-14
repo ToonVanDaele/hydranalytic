@@ -17,7 +17,7 @@
 #' @return r distance (L)
 
 #------------------------------------------------------------------------------
-radius_ThiemDupuitVerruijt  <- function(r0, Q, D, Kh, Rech, s){
+verruijt_r  <- function(r0, Q, D, Kh, Rech, s){
 
   r <- uniroot(function(r, s0 = s) ThiemDupuitVerruijt(r = r, r0 = r0, Q = Q, D = 10, Kh = 5,
                                                   Rech = Rech) - s0,

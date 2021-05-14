@@ -14,7 +14,7 @@
 #'
 #' @return Q abstraction (L^3/T)
 #-------------------------------------------------------------------------------
-Edelman_Q <- function(t, Kh, D, S, s) {
+edelman_Q <- function(t, Kh, D, S, s) {
 
 
   Q <- s * sqrt((S * Kh * D) / (pi * t))

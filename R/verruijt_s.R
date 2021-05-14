@@ -18,7 +18,7 @@
 #' @return s drawdown (L)
 
 #------------------------------------------------------------------------------
-ThiemDupuitVerruijt <- function(r, r0, Q, D, Kh, Rech) {
+verruijt_s <- function(r, r0, Q, D, Kh, Rech) {
 
   s <- ifelse(r >= r0,
                0,

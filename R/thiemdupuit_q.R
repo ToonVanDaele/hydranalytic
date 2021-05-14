@@ -13,7 +13,7 @@
 #'
 #' @return Q abstraction (L^3/T)
 #-------------------------------------------------------------------------------
-Dupuit_Q <- function(r_eq, r0, Kh, H, s) {
+dupuit_Q <- function(r_eq, r0, Kh, H, s) {
 
 
   Q <- (pi * Kh * (H^2 - (H - s)^2)) / (log(r0 + r_eq) - log(r_eq))
