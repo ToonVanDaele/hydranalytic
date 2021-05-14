@@ -1,4 +1,4 @@
-#' Error function erf & cerf
+#' Error function erf
 #'
 #' @description Erf & Erfc - Error function and complementary error function
 #' (based on last lines in ?pnorm help file)
