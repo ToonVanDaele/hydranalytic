@@ -1,7 +1,10 @@
 #' Thiem dupuit - drawdown
 #'
-#' @description Thiem Dupuit drawdown in a freatic aquifer with stationary flow.
-#' Reference: xxx
+#' @description Thiem Dupuit drawdown in a unconfined aquifer with stationary
+#' flow.
+#'
+#' Reference: Dupuit J (1857) Mouvement de l’eau a travers le terrains permeables.
+#' C R Hebd Seances Acad Sci 45: 92–96.
 #'
 #' @param r distance (L)
 #' @param r0 radius of influence (L)

@@ -1,9 +1,11 @@
 #' Verruijt - flow
 #'
-#' @description Verruijt flow in a freatic aquifer with stationary flow.
-#' Reference: xxx
+#' @description Verruijt flow in an unconfined aquifer with stationary flow.
+#' (Verruijt, 1970). page 55 equation 5.19.
 #'
-#' @param r_eq equivalent radius construction pit (L)
+#' Verruijt A. (1970). Theory of Groundwater Flow. London: Macmillan.
+#'
+#' @param r_eq radius of well (L) or equivalent radius of site (L)
 #' @param r0 radius of influence (L)
 #' @param Kh horizontal conductivity (L/T)
 #' @param H saturated thickness (level in rest) (L)

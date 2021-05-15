@@ -1,10 +1,13 @@
-#' Verruijt
+#' Verruijt - drawdown
 #'
-#' @description Freatic aquifer stationary flow with recharge (Verruijt, 1970).
-#'     When r > r0 the drawdown (s) will be = 0
+#' @description drawdown in an unconfed aquifer with stationary flow and
+#' recharge (Verruijt, 1970). page 55 equation 5.20
+#'     When r > r0 the drawdown (s) is set to 0.
 #'     When the drawdown (s) is larger than the aquifer thickness (D) the
 #'     drawdown is set equal to the the thickness and a warning message is
 #'     returned.
+#'
+#' Verruijt A. (1970). Theory of Groundwater Flow. London: Macmillan.
 #'
 #' @param Q abstraction (L^3/T)
 #' @param D saturated thickness (L)

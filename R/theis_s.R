@@ -1,7 +1,15 @@
-#' Theis_s
+#' Theis - drawdown
 #'
-#' @description Calculation of drawdown (s) with the Theis equation.
-#'     By default the Srivastava equation is used for the W(u) approximation.
+#' @description non-stationary drawdown (s) with the Theis equation in an
+#' unconfined aquifer.
+#'
+#' By default the Srivastava approximation is used for the well function W(u).
+#' The Huisman approximation is not appropiate for small values for u (i.e
+#' small drawdown and far from the well).
+#'
+#' Reference: Theis CV (1935) The relation between the lowering of the piezometric surface
+#' and the rate and duration of discharge of a well using groundwater storage.
+#' Transactions American Geophysical Union 16: 519-524.
 #'
 #' @param Q abstraction (L^3/T)
 #' @param t time (T),

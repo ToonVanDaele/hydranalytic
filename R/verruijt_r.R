@@ -1,7 +1,7 @@
-#' Verruijt search for radius with drawdown = s
+#' Verruijt - radius to a given drawdown
 #'
-#' @description Thiem / dupuit / Verruijt freatic aquifer stationary flow
-#' with recharge.
+#' @description Verruijt unconfined aquifer stationary flow with recharge.
+#'
 #'
 #' @param r0 radius of influence (L)
 #' @param Q abstraction (L^3/T)
