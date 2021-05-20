@@ -2,6 +2,10 @@
 #'
 #' @description Edelman horizontal flow in a cross section Reference: xxx
 #'
+#'#' Reference: Edelman JH. (1972). Groundwater hydraulics of extensive aquifers.
+#' Bulletin 13. Wageningen, Netherlands.: International Institute for Land
+#' Reclamation and Improvement (ILRZ).
+#'
 #' \deqn{s + t}
 #'
 #' @param t time (T)

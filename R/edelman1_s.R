@@ -1,7 +1,10 @@
 #' Edelman - case 1
 #'
-#' @description  De Marsily, 1986; p.198
-#' (www.grondwaterformules.nl)
+#' @description
+#'
+#' Reference: Edelman JH. (1972). Groundwater hydraulics of extensive aquifers.
+#' Bulletin 13. Wageningen, Netherlands.: International Institute for Land
+#' Reclamation and Improvement (ILRZ).
 #'
 #' @param r distance (L)
 #' @param S Storage (-)
