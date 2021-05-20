@@ -1,4 +1,4 @@
-#' Theis_r0_aprx
+#' Cooper-Jacob radius
 #'
 #' @description Approximated radius of influence with the Theis equation.
 #'
