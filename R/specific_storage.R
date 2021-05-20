@@ -8,7 +8,7 @@
 #'
 #' @export
 #'
-#' @return Sspec specific storage
+#' @return Sspec specific storage (-)
 
 Sspec <- function(d) {
 

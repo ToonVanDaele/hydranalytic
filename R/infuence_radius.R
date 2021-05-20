@@ -16,8 +16,8 @@ r_freat_steady <- function(Q, Rech) {
 
   require(assertthat)
 
-  assert_that(Q >= 0)
-  assert_that(Rech > 0)
+  assert_that(all(Q >= 0))
+  assert_that(all(Rech > 0))
 
   r <- (Q / (pi * Rech))^0.5
   return(r)
