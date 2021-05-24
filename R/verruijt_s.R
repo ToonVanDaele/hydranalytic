@@ -23,6 +23,7 @@
 #------------------------------------------------------------------------------
 verruijt_s <- function(r, r0, Q, D, Kh, Rech) {
 
+  require(assertthat)
   s <- ifelse(r >= r0,
                0,
                ifelse(D^2 - ((Q / (2 * pi * Kh)) * (log(Q / (pi * Rech * r^2)) - 1)) - ((Rech * r^2) / (2 * Kh)) > 0,

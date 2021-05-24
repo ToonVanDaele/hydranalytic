@@ -16,6 +16,10 @@
 #-------------------------------------------------------------------------------
 deglee <- function(Q, D, Kh, r, Dc, Kv) {
 
+  require(assertthat)
+  assert_that(all(Kh > 0 & D > 0 & Kh > 0 & Dc > 0 & Kv > 0))
+  assert_that(all(Q >= 0 & r >= 0))
+
   L <- sqrt(Kh * D * Dc / Kv)
 
   s <- (Q / 2 * pi * Kh * D) * besselI(x = r / L, nu = 0)
