@@ -16,7 +16,7 @@
 #'
 #' @return s drawdown (L)
 #-------------------------------------------------------------------------------
-dupuit_s2 <- function(r, r0, Q, D, Kh) {
+dupuit_s <- function(r, r0, Q, D, Kh) {
 
   s <- ifelse(r < r0,
               D - (D^2 - (Q / (pi * Kh)) * log(r0 / r))^0.5,

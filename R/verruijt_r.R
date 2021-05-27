@@ -21,6 +21,6 @@ verruijt_r  <- function(r0, Q, D, Kh, Rech, s){
 
   r <- uniroot(function(r, s0 = s) verruijt_s(r = r, r0 = r0, Q = Q, D = D, Kh = Kh,
                                                   Rech = Rech) - s0,
-          interval = c(1e-300, 1e30))
+          interval = c(1e-1, 1e30))
   return(r[[1]])
 }
