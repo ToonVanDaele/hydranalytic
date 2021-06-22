@@ -19,7 +19,9 @@
 dupuit_s <- function(r, r0, Q, D, Kh) {
 
   s <- ifelse(r < r0,
-              D - (D^2 - (Q / (pi * Kh)) * log(r0 / r))^0.5,
+              ifelse(D^2 > (Q / (pi * Kh)) * log(r0 / r),
+                     D - (D^2 - (Q / (pi * Kh)) * log(r0 / r))^0.5,
+                     D),
               0)
   return(s)
 }

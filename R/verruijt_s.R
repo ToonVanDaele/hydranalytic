@@ -25,7 +25,9 @@ verruijt_s <- function(r, r0, Q, D, Kh, Rech) {
 
 
   s <- ifelse(r < r0,
-              D - (D^2 - (Q / (pi * Kh)) * log(r0 / r) - (Rech / (2 * Kh))  * (r^2 - r0^2))^0.5,
+              ifelse(D^2 - (Q / (pi * Kh)) * log(r0 / r) - (Rech / (2 * Kh))  * (r^2 - r0^2) > 0,
+                     D - (D^2 - (Q / (pi * Kh)) * log(r0 / r) - (Rech / (2 * Kh))  * (r^2 - r0^2))^0.5,
+                     D),
               0)
 
   return(s)
