@@ -23,14 +23,62 @@ knitr::opts_chunk$set(
 
 
 $$
-u = \frac{S * r^2}{4 * Kh * D * t}
+u^2 = \frac{S  r^2}{4  Kh  D  t}
 $$
 
 $$
-s = \frac{Q}{4 * pi * Kh * D} * W(u)
+s(r, t) = \frac{Q}{4 \pi Kh  D} * W(u)
 $$
 
 
+
+### Dupuit
+
+$$
+s(r) = D - \sqrt{D^2 - (\frac{Q}{\pi Kh}) log(\frac{r0}{r})}
+$$
+
+
+### Edelman
+
+
+$$
+s(r,t) = h_0 (1 - erf(r  \sqrt{\frac{S}{4 Kh D t}})
+$$
+
+
+
+### peilverlaging 
+
+```{r}
+r <- c(1, 10, 50, 100)
+edelman_s(r = r, S = 0.25, Kh = 7, D = 50, t = 1, h0 = -1)
+```
+
+
+
+### Peilverhoging grafiek
+
+```{r}
+library(tidyverse)
+library(hydranalytic)
+
+t <- c(1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121)
+r <- seq(from = 0, to = 700, by = 10)
+Kh <- 7
+D <- 100
+S <- 0.25
+
+df <- expand.grid(t = t, r = r, Kh = Kh, D = D, S = S)
+df <- df %>%
+  rowwise() %>%
+  mutate(s = edelman_s(r = r, S = S, Kh = Kh, D = D, t = t, 1))
+
+ggplot(data = df, aes(x = r, y = s, group = t, colour = t)) + geom_line() +
+  scale_y_continuous(breaks=seq(from = 0, to = 1, by = 0.2)) +
+  scale_x_continuous(breaks=seq(from = 0, to = 700, by = 100))
+
+```
 
 
 
