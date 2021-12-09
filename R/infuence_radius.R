@@ -1,18 +1,18 @@
-#' Radius of influence
+#' Radius of equal recharge
 #'
-#' @description Radius of influence for a stationary groundwater well in a
-#' freatic aquifer with net recharge. Reference: De Smedt, 2007
+#' @description Radius of a circle for a stationary groundwater well were
+#' extraction equals recharge. Reference: De Smedt, 2007
 #'
 #' \deqn{\sqrt{a + b}}
 #'
 #' @param Q abstraction (L^3/T)
 #' @param Rech recharge (L/T)
 #'
-#' @return radius of influence (L)
+#' @return radius (L)
 #' @export
 #'
 
-r_freat_steady <- function(Q, Rech) {
+freat_equal_r <- function(Q, Rech) {
 
   require(assertthat)
 

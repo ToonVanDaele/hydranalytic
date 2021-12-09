@@ -1,6 +1,6 @@
-#' Thiem dupuit - drawdown
+#' Thiem / Dupuit - drawdown
 #'
-#' @description Thiem Dupuit drawdown in a unconfined aquifer with stationary
+#' @description Thiem / Dupuit drawdown in an unconfined aquifer with stationary
 #' flow.
 #'
 #' Reference: Dupuit J (1857) Mouvement de l’eau a travers le terrains permeables.
@@ -10,7 +10,7 @@
 #' @param r0 radius of influence (L)
 #' @param Q abstraction (L^3/T)
 #' @param D saturated thickness (L)
-#' @param Kh horizontal transmissivity (L/T)
+#' @param Kh horizontal conductivity (L/T)
 #'
 #' @export
 #'
@@ -18,6 +18,10 @@
 #-------------------------------------------------------------------------------
 dupuit_s <- function(r, r0, Q, D, Kh) {
 
-  s <- ifelse(r < r0, (Q / (2 * pi * Kh * D)) * log(r0 / r), 0)
+  s <- ifelse(r < r0,
+              ifelse(D^2 > (Q / (pi * Kh)) * log(r0 / r),
+                     D - (D^2 - (Q / (pi * Kh)) * log(r0 / r))^0.5,
+                     D),
+              0)
   return(s)
 }

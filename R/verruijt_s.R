@@ -11,7 +11,7 @@
 #'
 #' @param Q abstraction (L^3/T)
 #' @param D saturated thickness (L)
-#' @param Kh horizontal transmissivity (L/T)
+#' @param Kh horizontal conductivity (L/T)
 #' @param Rech recharge (L/T)
 #' @param r distance at which to calculate the drawdown(L)
 #' @param r0 radius of influence(L)
@@ -23,12 +23,12 @@
 #------------------------------------------------------------------------------
 verruijt_s <- function(r, r0, Q, D, Kh, Rech) {
 
-  require(assertthat)
-  s <- ifelse(r >= r0,
-               0,
-               ifelse(D^2 - ((Q / (2 * pi * Kh)) * (log(Q / (pi * Rech * r^2)) - 1)) - ((Rech * r^2) / (2 * Kh)) > 0,
-                       D - (D^2 - ((Q / (2 * pi * Kh)) * (log(Q / (pi * Rech * r^2)) - 1)) - ((Rech * r^2) / (2 * Kh)))^0.5,
-                       D))
+
+  s <- ifelse(r < r0,
+              ifelse(D^2 - (Q / (pi * Kh)) * log(r0 / r) - (Rech / (2 * Kh))  * (r^2 - r0^2) > 0,
+                     D - (D^2 - (Q / (pi * Kh)) * log(r0 / r) - (Rech / (2 * Kh))  * (r^2 - r0^2))^0.5,
+                     D),
+              0)
 
   return(s)
 }
