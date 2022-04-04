@@ -8,6 +8,7 @@
 #' @return W_u (-)
 #' @export
 
+
 W_u <- function(u, method = "srivastava") {
 
   W_u <- ifelse(method == "srivastava" | is.null(method),
