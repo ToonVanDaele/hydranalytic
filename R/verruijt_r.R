@@ -24,3 +24,4 @@ verruijt_r  <- function(r0, Q, D, Kh, Rech, s){
           interval = c(1, 1e30))
   return(r[[1]])
 }
+
